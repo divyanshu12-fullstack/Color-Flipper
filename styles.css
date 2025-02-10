@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&family=Playwrite+VN:wght@100..400&family=Roboto+Condensed:wght@100..900&family=Roboto+Slab:wght@100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+:root {
+    --primary-font: "Smooch Sans", serif;
+    --bg-color: #f1f5f8;
+    --text-color: black;
+    --btn-bg: rgb(13, 12, 12);
+    --btn-text: whitesmoke;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Navigation Links */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Background Color Label */
+.bg-cl {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.change-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1.5px solid black;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.change-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(30, 30, 30);
+}
